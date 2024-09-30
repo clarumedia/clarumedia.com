@@ -50,7 +50,7 @@ if ($GLOBALS["oCMSServer"]->arrFile["ascii_content"]){
 $ContactOrgForm= new ADODBAutoForm($db);
 $ContactOrgForm->table="users";
 $ContactOrgForm->strPrimaryKey="userid";
-$ContactOrgForm->strFriendlyFormName="Marden Broadband Petition Form";
+$ContactOrgForm->strFormTitle="Marden Broadband Petition Form";
 $ContactOrgForm->ztabhtml=" class='tableForm' ";
 
 $ContactOrgForm->arrFormControls["job_id"]=array("display_mode"=>"hidden","value"=>10254);

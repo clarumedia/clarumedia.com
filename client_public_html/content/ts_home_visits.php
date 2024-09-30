@@ -48,7 +48,7 @@ if ($SREQUEST["prepare_add_new"]){
         $objFormCRM->strPrimaryKey="crm_id";
         $objFormCRM->ztabhtml=" class='tableForm' ";
         $datCanonNow=getDateForMysqlDateField();
-        $objFormCRM->strFriendlyFormName="Add Diary Entry";
+        $objFormCRM->strFormTitle="Add Diary Entry";
 
 
         $objFormCRM->arrFormControls["subject"]=array("title"=>"Subject","value"=>$arrNewMessage["subject"],"css_class"=>"txtCRMEditControls","max_length"=>100,"value"=>"Home Visit");

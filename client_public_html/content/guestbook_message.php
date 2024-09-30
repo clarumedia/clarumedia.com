@@ -139,7 +139,7 @@ if ($User->UserID) {
 
 
 //$Guestbook->boolLocked=TRUE;
-$Guestbook->strFriendlyFormName="Please leave us a message";
+$Guestbook->strFormTitle="Please leave us a message";
 $Guestbook->ztabhtml="  class='tableForm' ";
 
 

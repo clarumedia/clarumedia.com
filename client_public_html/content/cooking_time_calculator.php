@@ -1,7 +1,7 @@
 <?php
 
 $objForm=new HTMLForm($db);
-$objForm->strFriendlyFormName="Calculator";
+$objForm->strFormTitle="Calculator";
 $objForm->boolDisplayTitle=true;
 $objForm->arrTableTagAttributes["class"]="tableForm";
 $objForm->arrFormTagAttributes["name"]="frmCalculator";
