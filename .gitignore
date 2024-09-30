@@ -1,0 +1,9 @@
+OLD_public_html/
+logs/
+private_html/
+public_html/
+relator_install/
+ssl/
+tmp/
+virtual_files/
+

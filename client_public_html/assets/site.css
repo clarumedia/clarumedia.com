@@ -1,0 +1,177 @@
+@import "/cbframe/skins/default/cdbuk.css";
+
+
+#divMainContent {
+    display: block; /* Revert Relator's table layout to normal flow instead of table */
+}
+
+h1,h2,h3,h4,h5 {
+    font-weight: bold;
+}
+
+
+blockquote {
+    
+    margin:0px;
+    color:#aaaaaa;
+    padding:5px;
+    border:1px solid #cccccc;
+    font-weight: bold;
+    font-style: italic;
+    font-size:110%;
+}
+
+blockquote::before {
+    content: open-quote; /* Use the open-quote symbol defined in quotes property */
+}
+  
+blockquote::after {
+    content: close-quote; /* Use the close-quote symbol defined in quotes property */
+}
+
+
+.navbar-brand a {
+    font-style: normal;
+    font-size:3.5rem;
+    display: inline-block; /* Ensures the pseudo-element fits the content */
+
+}
+
+.navbar-brand a {
+    background: linear-gradient(to right, white 46%, transparent 46%),
+                linear-gradient(to right, #00eeff 100%, transparent 60%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+
+.divColumnsContainer{
+    margin-top:5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.divColumn1 {
+    width:80%;
+    padding-left:10px;
+    padding-right:10px;
+}
+  
+
+.divColumn2 {
+    width:20%;
+}
+
+
+
+
+
+.divColumn2 figure {
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+    border: 1px solid #cccccc;
+    display: flex;
+    flex-flow: column;
+    padding:10px;
+}
+   
+
+.divColumn2 figure figcaption {
+    min-height:15px;
+    background-color:#dedede;
+    padding:5px;
+    border:1px solid #cccccc;
+    overflow:hidden;
+    text-align: center;
+}
+
+@media (max-width: 900px) {
+
+    #divMainContent {
+        width:100vw;
+        margin:0px;
+    }
+
+    .divColumn1, .divColumn2 {
+        width: 100%; /* Make each column take up full width on smaller screens */
+
+    }
+}
+
+
+.divLightBoxGrid {
+
+    margin-top:10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Adjust the column width */
+    gap: 20px; /* Adjust the gap between figures */
+}
+
+.divLightBoxGrid figure {
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+    border: 1px solid #cccccc;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.divLightBoxGrid figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Maintain aspect ratio without distortion */
+}
+
+.divLightBoxGrid figcaption {
+    min-height:15px;
+    background-color:#dedede;
+    padding:5px;
+    border:1px solid #cccccc;
+    overflow:hidden;
+    text-align: center;
+}
+
+
+.divNewsPaperArticles {
+    margin-top:10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Adjust the column width */
+    gap: 20px; /* Adjust the gap between figures */
+}
+
+.divNewsPaperArticles figure {
+    margin-left:0px;
+    margin-right:0px;
+    margin-top:0px;
+    border: 1px solid #cccccc;
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.divNewsPaperArticles figure img {
+    width: 100%;
+    height:200px;
+    object-fit: cover; /* Maintain aspect ratio without distortion */
+}
+
+.divNewsPaperArticles figcaption {
+    font-size:120%;
+    font-weight:bold;
+    font-style:italic;
+    min-height:15px;
+    background-color:#dedede;
+    padding:5px;
+    border:1px solid #cccccc;
+    text-align: left;
+}
+
+.divNewsPaperArticles figure section {
+    padding:10px;
+    min-height:130px;
+}
+
