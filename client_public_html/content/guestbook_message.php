@@ -123,17 +123,17 @@ $Guestbook->arrFormControls["gb_date"]=array("title"=>"gb date","display_mode"=>
 
 
 if ($User->UserID) {
-	$Guestbook->arrFormControls["message"]=array("title"=>"Message", "extra_html"=>"rows='10' style='width:600px' class='form-control'");
+	$Guestbook->arrFormControls["message"]=array("title"=>"Message","rows"=>10,"style"=>"width:600px;","class"=>"form-control");
 	$Guestbook->arrFormControls["email"]=array("display_mode"=>"hidden","value"=>$strUserEmail);
 	$Guestbook->arrFormControls["userid"]=array("display_mode"=>"hidden","value"=>$User->UserID);
 
 
 } else {
-	$Guestbook->arrFormControls["fullname"]=array("title"=>"Name","extra_html"=>"class='form-control'");
-	$Guestbook->arrFormControls["email"]=array("title"=>"Email","value"=>$strUserEmail,"extra_html"=>"class='form-control' ");
+	$Guestbook->arrFormControls["fullname"]=array("title"=>"Name","class"=>"form-control");
+	$Guestbook->arrFormControls["email"]=array("title"=>"Email","value"=>$strUserEmail,"class"=>"form-control");
 
-	$Guestbook->arrFormControls["message"]=array("title"=>"Message", "extra_html"=>"rows='10' style='width:600px' class='form-control'");
-	$Guestbook->arrFormControls["CAPTCHA_CODE"]=array("title"=>"Validation Code","control_type"=>"captcha", "required"=>"1","extra_html"=>"class='form-control'");
+	$Guestbook->arrFormControls["message"]=array("title"=>"Message","rows"=>10,"style"=>"width:600px","class"=>"form-control");
+	$Guestbook->arrFormControls["CAPTCHA_CODE"]=array("title"=>"Validation Code","control_type"=>"captcha", "required"=>"1","class"=>"form-control");
 
 }
 
